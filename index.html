@@ -4,271 +4,178 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AireNova CR | Aire acondicionado en Costa Rica</title>
-  <meta name="description" content="AireNova CR ofrece instalación, mantenimiento, reparación y planes de membresía para aires acondicionados en hogares, empresas, restaurantes e industrias en Costa Rica." />
+  <meta name="description" content="AireNova CR ofrece instalación, mantenimiento, reparación y planes de membresía para aires acondicionados en hogares, restaurantes, empresas e industrias en Costa Rica." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header" id="inicio">
-    <div class="top-strip">
-      <span>Servicio en Costa Rica</span>
-      <span>WhatsApp empresa: <strong>7057-0089</strong></span>
-      <span>Llamadas / encargado: <strong>6022-3280</strong></span>
+  <header class="topbar">
+    <span>Servicio en Costa Rica</span>
+    <span>WhatsApp empresa: <strong>7057-0089</strong></span>
+    <span>Llamadas / encargado: <strong>6022-3280</strong></span>
+  </header>
+
+  <nav class="navbar">
+    <a class="brand" href="#inicio" aria-label="Inicio AireNova CR">
+      <img src="assets/airenova-logo-oficial.jpeg" alt="Logo oficial AireNova CR">
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" onclick="document.body.classList.toggle('menu-open')">☰</button>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#promocion">Promoción</a>
+      <a href="#planes">Planes</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
     </div>
+    <a class="btn btn-small" href="https://wa.me/50670570089" target="_blank" rel="noopener">Cotizar</a>
+  </nav>
 
-    <nav class="nav">
-      <a class="brand" href="#inicio" aria-label="Inicio AireNova CR">
-        <img src="assets/airenova-logo-oficial.jpg" alt="Logo oficial AireNova CR" />
-        <div>
-          <strong>AireNova CR</strong>
-          <small>Aire acondicionado</small>
-        </div>
-      </a>
-      <button class="menu-button" aria-label="Abrir menú" onclick="document.body.classList.toggle('menu-open')">☰</button>
-      <div class="nav-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#promocion">Promoción</a>
-        <a href="#planes">Planes</a>
-        <a href="#negocios">Negocios</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <a class="nav-cta" href="https://wa.me/50670570089" target="_blank" rel="noopener">Cotizar</a>
-    </nav>
-
+  <main id="inicio">
     <section class="hero">
       <div class="hero-content">
         <p class="eyebrow">Instalación • Mantenimiento • Reparación</p>
         <h1>Soluciones profesionales en aire acondicionado para hogares y empresas</h1>
-        <p class="hero-text">AireNova CR brinda servicios técnicos, planes de mantenimiento y promociones de instalación con atención rápida, trabajo limpio y garantía.</p>
+        <p>AireNova CR ofrece servicios técnicos, planes de mantenimiento y promociones de instalación con atención rápida, trabajo limpio y garantía.</p>
         <div class="hero-actions">
-          <a class="button primary" href="https://wa.me/50670570089" target="_blank" rel="noopener">Solicitar cotización</a>
-          <a class="button secondary" href="#planes">Ver planes</a>
+          <a class="btn" href="https://wa.me/50670570089" target="_blank" rel="noopener">Solicitar cotización</a>
+          <a class="btn ghost" href="#planes">Ver planes</a>
         </div>
-        <div class="trust-row" aria-label="Beneficios principales">
-          <span>✓ Instalación segura</span>
-          <span>✓ Técnicos especializados</span>
-          <span>✓ Atención personalizada</span>
+        <div class="hero-points">
+          <span>Instalación segura</span>
+          <span>Técnicos especializados</span>
+          <span>Atención confiable</span>
         </div>
       </div>
-      <div class="hero-card">
-        <img src="assets/airenova-logo-informativo.jpg" alt="Imagen informativa de AireNova CR" />
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <section class="section intro-section">
-      <div class="section-heading left">
-        <p class="eyebrow">Tu aire siempre en perfecto estado</p>
-        <h2>Una página clara, confiable y enfocada en vender servicios</h2>
-        <p>La información de los artes se organizó en secciones limpias para que el cliente entienda rápido qué ofrece AireNova CR, cuánto cuesta y cómo contactar.</p>
-      </div>
-      <div class="mini-grid">
-        <article>
-          <span class="icon">🛡️</span>
-          <h3>Garantía y calidad</h3>
-          <p>Servicios presentados con condiciones claras y enfoque profesional.</p>
-        </article>
-        <article>
-          <span class="icon">🧰</span>
-          <h3>Trabajo técnico</h3>
-          <p>Instalación, mantenimiento, diagnóstico y reparación.</p>
-        </article>
-        <article>
-          <span class="icon">🌿</span>
-          <h3>Aire limpio</h3>
-          <p>Ambientes saludables, equipos eficientes y tranquilidad todo el año.</p>
-        </article>
+      <div class="hero-visual">
+        <img src="assets/logo-informativo.jpeg" alt="Información oficial AireNova CR">
       </div>
     </section>
 
     <section class="section" id="servicios">
-      <div class="section-heading">
+      <div class="section-title">
         <p class="eyebrow">Servicios principales</p>
-        <h2>Soluciones para cada necesidad</h2>
-        <p>Servicios residenciales, comerciales e industriales con atención ordenada y seguimiento técnico.</p>
+        <h2>Todo lo necesario para cuidar tus equipos</h2>
+        <p>Una presentación más limpia de los servicios que el cliente ya ofrece en sus artes oficiales.</p>
       </div>
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-icon">❄️</div>
-          <h3>Instalación</h3>
-          <p>Instalación de aires acondicionados mini split inverter y otros equipos según evaluación.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">🧼</div>
-          <h3>Mantenimiento preventivo</h3>
-          <p>Limpieza profunda, revisión de filtros, serpentines, niveles de gas y rendimiento.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">🔧</div>
-          <h3>Reparaciones</h3>
-          <p>Diagnóstico de fallas, corrección de problemas y revisión de componentes.</p>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">🏢</div>
-          <h3>Planes empresariales</h3>
-          <p>Mantenimiento programado para restaurantes, oficinas, comercios e industrias.</p>
-        </article>
+      <div class="cards four">
+        <article class="card"><span>❄️</span><h3>Instalación</h3><p>Instalación profesional de mini split inverter y equipos residenciales o comerciales.</p></article>
+        <article class="card"><span>🧼</span><h3>Mantenimiento</h3><p>Limpieza profunda, revisión de filtros, serpentines, drenajes y funcionamiento.</p></article>
+        <article class="card"><span>🔧</span><h3>Reparación</h3><p>Diagnóstico técnico, revisión de fallas y corrección de problemas del equipo.</p></article>
+        <article class="card"><span>🏢</span><h3>Planes empresariales</h3><p>Soluciones para restaurantes, oficinas, industrias y comercios.</p></article>
       </div>
     </section>
 
-    <section class="promo-section" id="promocion">
-      <div class="promo-copy">
+    <section class="promo" id="promocion">
+      <div>
         <p class="eyebrow">Promoción de instalación</p>
         <h2>Mini split inverter con instalación profesional</h2>
-        <p>Precios de instalación para equipos inverter. La promoción aplica para todo el país, según disponibilidad y evaluación técnica.</p>
-        <div class="price-list">
-          <div><span>12.000 BTU</span><strong>₡320.000</strong></div>
-          <div><span>18.000 BTU</span><strong>₡410.000</strong></div>
-          <div><span>24.000 BTU</span><strong>₡490.000</strong></div>
+        <p>Precios organizados de forma clara para que el visitante comprenda la promoción sin saturar la página.</p>
+        <div class="price-table">
+          <div><strong>12.000 BTU</strong><span>₡320.000</span></div>
+          <div><strong>18.000 BTU</strong><span>₡410.000</span></div>
+          <div><strong>24.000 BTU</strong><span>₡490.000</span></div>
         </div>
       </div>
-      <div class="promo-details">
-        <div class="included">
-          <h3>La instalación incluye</h3>
-          <ul>
-            <li>3 metros de tubería de cobre</li>
-            <li>3 metros de cable de comunicación</li>
-            <li>Base de condensador</li>
-            <li>Protector de voltaje</li>
-          </ul>
-        </div>
-        <div class="not-included">
-          <h3>No incluye</h3>
-          <ul>
-            <li>Breaker eléctrico</li>
-            <li>Cable eléctrico</li>
-            <li>Bomba de condensado: ₡30.000 si la instalación lo amerita</li>
-          </ul>
-        </div>
-        <p class="note">Precios no incluyen IVA. Condiciones sujetas a revisión del cliente antes de publicar.</p>
+      <div class="promo-box">
+        <h3>La instalación incluye</h3>
+        <ul>
+          <li>3 metros de tubería de cobre</li>
+          <li>3 metros de cable de comunicación</li>
+          <li>Base de condensador</li>
+          <li>Protector de voltaje</li>
+        </ul>
+        <h3>No incluye</h3>
+        <ul class="negative">
+          <li>Breaker eléctrico</li>
+          <li>Cable eléctrico</li>
+          <li>Bomba de condensado: ₡30.000 si aplica</li>
+        </ul>
+        <p class="note">Precios no incluyen IVA. Información sujeta a validación final del cliente.</p>
       </div>
     </section>
 
     <section class="section" id="planes">
-      <div class="section-heading">
-        <p class="eyebrow">Membresías AireNova CR</p>
-        <h2>Mantenimiento preventivo todo el año</h2>
-        <p>Planes mensuales por aire acondicionado, diseñados para proteger la inversión y mantener equipos eficientes.</p>
+      <div class="section-title">
+        <p class="eyebrow">Membresías</p>
+        <h2>Planes de mantenimiento para todo el año</h2>
+        <p>Planes mensuales por aire acondicionado, pensados para proteger la inversión y mantener aire limpio.</p>
       </div>
-      <div class="plans-grid">
-        <article class="plan-card">
-          <div class="plan-header basic"><span>Plan AireNova</span><strong>₡10.000</strong><small>mensual por aire acondicionado</small></div>
-          <ul>
-            <li>2 mantenimientos al año</li>
-            <li>Revisiones sin costo adicional</li>
-            <li>10% de descuento en reparaciones</li>
-            <li>15% de descuento en instalaciones</li>
-            <li>Prioridad en la atención</li>
-          </ul>
-        </article>
-        <article class="plan-card featured-plan">
-          <div class="plan-header plus"><span>Plan Plus</span><strong>₡15.000</strong><small>mensual por aire acondicionado</small></div>
-          <ul>
-            <li>2 mantenimientos al año</li>
-            <li>Revisiones sin costo adicional</li>
-            <li>15% de descuento en reparaciones</li>
-            <li>25% de descuento en instalaciones</li>
-            <li>25% en mano de obra de instalación</li>
-            <li>Limpieza adicional de filtros sin costo</li>
-          </ul>
-        </article>
-        <article class="plan-card">
-          <div class="plan-header premium"><span>Plan Premium</span><strong>₡20.000</strong><small>mensual por aire acondicionado</small></div>
-          <ul>
-            <li>2 mantenimientos al año</li>
-            <li>Revisiones sin costo adicional</li>
-            <li>25% de descuento en reparaciones</li>
-            <li>50% de descuento en instalaciones</li>
-            <li>Prioridad en la atención</li>
-            <li>Visita técnica de emergencia con tarifa preferencial</li>
-          </ul>
-        </article>
+      <div class="cards three">
+        <article class="plan"><h3>Plan AireNova</h3><strong>₡10.000</strong><small>mensual por aire</small><ul><li>2 mantenimientos al año</li><li>Revisiones sin costo adicional</li><li>10% en reparaciones</li><li>15% en instalaciones</li><li>Prioridad en atención</li></ul></article>
+        <article class="plan featured"><h3>Plan Plus</h3><strong>₡15.000</strong><small>mensual por aire</small><ul><li>2 mantenimientos al año</li><li>15% en reparaciones</li><li>25% en instalaciones</li><li>25% en mano de obra</li><li>Limpieza adicional de filtros</li></ul></article>
+        <article class="plan premium"><h3>Plan Premium</h3><strong>₡20.000</strong><small>mensual por aire</small><ul><li>2 mantenimientos al año</li><li>25% en reparaciones</li><li>50% en instalaciones</li><li>Prioridad en atención</li><li>Emergencia con tarifa preferencial</li></ul></article>
       </div>
-      <div class="loyalty-card">
-        <div>
-          <p class="eyebrow">Nuevo</p>
-          <h3>Plan de lealtad</h3>
-          <p>Una opción accesible para mantener el aire acondicionado en buen estado durante el año.</p>
-        </div>
-        <strong>₡5.000 <span>mensual*</span></strong>
+      <div class="loyalty"><span>Nuevo plan de lealtad</span><strong>₡5.000 mensual*</strong><p>Incluye 2 mantenimientos preventivos al año, recordatorios y asesoría técnica personalizada.</p></div>
+    </section>
+
+    <section class="section business">
+      <div class="section-title">
+        <p class="eyebrow">Para negocios</p>
+        <h2>Paquetes para restaurantes, empresas e industrias</h2>
+      </div>
+      <div class="cards three">
+        <article class="business-card"><h3>Restaurantes</h3><strong>Desde ₡15.000 mensual*</strong><p>Ideal para restaurantes, cafeterías, panaderías, sodas y comercios.</p></article>
+        <article class="business-card"><h3>Empresas</h3><strong>Desde ₡20.000 mensual*</strong><p>Para oficinas, locales comerciales, consultorios y espacios de trabajo.</p></article>
+        <article class="business-card"><h3>Industrias</h3><strong>Desde ₡25.000 mensual*</strong><p>Para bodegas, plantas de producción, fábricas y centros logísticos.</p></article>
       </div>
     </section>
 
-    <section class="business-section" id="negocios">
-      <div class="section-heading">
-        <p class="eyebrow">Soluciones para negocios</p>
-        <h2>Planes diseñados para restaurantes, empresas e industrias</h2>
-      </div>
-      <div class="business-grid">
-        <article class="business-card restaurant">
-          <h3>Restaurantes</h3>
-          <p>Ideal para restaurantes, cafeterías, panaderías, sodas y comercios.</p>
-          <strong>Desde ₡15.000 mensual*</strong>
-          <ul><li>2 mantenimientos preventivos al año</li><li>Limpieza profunda</li><li>Atención prioritaria</li></ul>
-        </article>
-        <article class="business-card company">
-          <h3>Empresas</h3>
-          <p>Para oficinas, locales comerciales, consultorios y espacios de trabajo.</p>
-          <strong>Desde ₡20.000 mensual*</strong>
-          <ul><li>Revisión eléctrica y mecánica</li><li>Optimización de rendimiento</li><li>Limpieza de filtros y serpentines</li></ul>
-        </article>
-        <article class="business-card industry">
-          <h3>Industrias</h3>
-          <p>Para bodegas, plantas de producción, fábricas y centros logísticos.</p>
-          <strong>Desde ₡25.000 mensual*</strong>
-          <ul><li>Inspección y calibración de sistemas</li><li>Revisión de ductos y flujo de aire</li><li>Plan según necesidad operativa</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="referral-section">
-      <div>
-        <p class="eyebrow">Plan de referidos</p>
-        <h2>Gana más con AireNova CR</h2>
-        <p>Refiere 20 nuevos ingresos que contraten cualquier plan de membresía y recibe instalación y mano de obra gratis.</p>
-      </div>
-      <div class="referral-box">
-        <strong>Instalación y mano de obra gratis</strong>
-        <small>No aplica con otras promociones ni para instalaciones nuevas de más de 5 equipos.</small>
-      </div>
-    </section>
-
-    <section class="gallery-section">
-      <div class="section-heading">
-        <p class="eyebrow">Material del cliente</p>
-        <h2>Info.</h2>
-        <p>Información Adicional.</p>
+    <section class="section gallery" id="galeria">
+      <div class="section-title">
+        <p class="eyebrow">Servicios y promociones</p>
+        <h2>Galería interactiva</h2>
+        <p>Toque cualquier imagen para verla ampliada con información resumida y botón de cotización.</p>
       </div>
       <div class="gallery-grid">
-        <img src="assets/promo-instalacion.jpg" alt="Arte de promoción de instalación AireNova CR" />
-        <img src="assets/membresia-planes.jpg" alt="Arte de planes de membresía AireNova CR" />
-        <img src="assets/planes-negocios.jpg" alt="Arte de soluciones profesionales para negocio AireNova CR" />
+        <button class="gallery-item" data-title="Promoción instalación mini split inverter" data-description="Instalación profesional para equipos inverter de 12.000, 18.000 y 24.000 BTU. Incluye materiales básicos según condiciones indicadas por AireNova CR." data-includes="Incluye tubería de cobre, cable de comunicación, base de condensador y protector de voltaje. No incluye breaker, cable eléctrico ni bomba de condensado cuando aplique." data-img="assets/promo-instalacion.jpeg"><img src="assets/promo-instalacion.jpeg" alt="Promoción instalación mini split AireNova CR"><span>Promoción instalación</span></button>
+        <button class="gallery-item" data-title="Planes de membresía" data-description="Planes mensuales para mantenimiento preventivo, revisiones, descuentos y atención prioritaria según el plan contratado." data-includes="Planes AireNova, Plus, Premium y plan de lealtad. Precios mensuales por aire acondicionado. No incluye IVA." data-img="assets/planes-membresia.jpeg"><img src="assets/planes-membresia.jpeg" alt="Planes de membresía AireNova CR"><span>Planes de membresía</span></button>
+        <button class="gallery-item" data-title="Soluciones para negocios" data-description="Planes diseñados para restaurantes, empresas e industrias que necesitan equipos eficientes, mantenimiento programado y atención personalizada." data-includes="Incluye paquetes desde ₡15.000, ₡20.000 y ₡25.000 mensuales según el tipo de negocio y necesidad técnica." data-img="assets/informacion-general.jpeg"><img src="assets/informacion-general.jpeg" alt="Soluciones para negocios AireNova CR"><span>Soluciones para negocios</span></button>
       </div>
     </section>
 
-    <section class="contact-section" id="contacto">
-      <div class="contact-card">
-        <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>Agenda tu servicio con AireNova CR</h2>
-          <p>Atención para hogares, negocios e industrias en Costa Rica.</p>
-        </div>
-        <div class="contact-list">
-          <a href="https://wa.me/50670570089" target="_blank" rel="noopener"><span>WhatsApp empresa</span><strong>7057-0089</strong></a>
-          <a href="tel:+50660223280"><span>Llamadas / encargado</span><strong>6022-3280</strong></a>
-          <a href="mailto:airenovacr@gmail.com"><span>Correo</span><strong>airenovacr@gmail.com</strong></a>
-          <div><span>Ubicación</span><strong>San José, Costa Rica</strong></div>
-        </div>
+    <section class="section referral">
+      <div>
+        <p class="eyebrow">Plan de referidos</p>
+        <h2>Refiere y gana más</h2>
+        <p>Refiere 20 nuevos ingresos que contraten cualquier plan de membresía y recibe instalación y mano de obra gratis.</p>
+      </div>
+      <a class="btn" href="https://wa.me/50670570089" target="_blank" rel="noopener">Consultar condiciones</a>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Agenda tu servicio con AireNova CR</h2>
+        <p>Atención para hogares, negocios e industrias en Costa Rica.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="https://wa.me/50670570089" target="_blank" rel="noopener"><span>WhatsApp empresa</span><strong>7057-0089</strong></a>
+        <a href="tel:+50660223280"><span>Llamadas / encargado</span><strong>6022-3280</strong></a>
+        <a href="mailto:airenovacr@gmail.com"><span>Correo</span><strong>airenovacr@gmail.com</strong></a>
+        <div><span>Ubicación</span><strong>San José, Costa Rica</strong></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <img src="assets/airenova-logo-oficial.jpg" alt="Logo AireNova CR" />
+  <footer>
+    <img src="assets/airenova-logo-oficial.jpeg" alt="Logo AireNova CR">
     <p>Aire limpio, equipos eficientes, tranquilidad todo el año.</p>
-    <small>*Planes mensuales por aire acondicionado. No incluye IVA. Información sujeta a validación final del cliente.</small>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/50670570089" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp</a>
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Detalle del servicio">
+      <button class="modal-close" data-close aria-label="Cerrar">×</button>
+      <img id="modalImg" alt="Imagen ampliada AireNova CR">
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-includes" id="modalIncludes"></div>
+        <a class="btn" href="https://wa.me/50670570089" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <a class="whatsapp-float" href="https://wa.me/50670570089" target="_blank" rel="noopener">WhatsApp</a>
+  <script src="script.js"></script>
 </body>
 </html>
