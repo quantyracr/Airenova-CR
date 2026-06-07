@@ -381,6 +381,31 @@
   </div>
 
   <script>
+    // Navegación interna: ajusta el desplazamiento por el menú fijo
+    // y cierra automáticamente el menú desplegable en celular.
+    const nav = document.getElementById('nav');
+
+    document.querySelectorAll('a[href^="#"]').forEach(function(link){
+      link.addEventListener('click', function(event){
+        const targetSelector = link.getAttribute('href');
+        if(!targetSelector || targetSelector === '#') return;
+
+        const target = document.querySelector(targetSelector);
+        if(!target) return;
+
+        event.preventDefault();
+        nav.classList.remove('open');
+
+        const offset = nav.offsetHeight + 24;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: Math.max(targetPosition, 0),
+          behavior: 'smooth'
+        });
+      });
+    });
+
     function openModal(title, desc, img, items){
       document.getElementById('modalTitle').textContent = title;
       document.getElementById('modalDesc').textContent = desc;
