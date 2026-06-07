@@ -24,6 +24,7 @@
     *{box-sizing:border-box}
     html{scroll-behavior:smooth;scroll-padding-top:150px}
     body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texto);background:#fff;line-height:1.55}
+    body.modal-open{overflow:hidden}
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
     section[id]{scroll-margin-top:150px}
@@ -384,6 +385,7 @@
     // Navegación interna: ajusta el desplazamiento por el menú fijo
     // y cierra automáticamente el menú desplegable en celular.
     const nav = document.getElementById('nav');
+    let modalHistoryOpen = false;
 
     document.querySelectorAll('a[href^="#"]').forEach(function(link){
       link.addEventListener('click', function(event){
@@ -412,12 +414,45 @@
       document.getElementById('modalImg').src = img;
       document.getElementById('modalList').innerHTML = items.map(item => '<li>' + item + '</li>').join('');
       document.getElementById('modal').classList.add('active');
+      document.body.classList.add('modal-open');
+
+      if(!modalHistoryOpen){
+        history.pushState({modalOpen:true}, '');
+        modalHistoryOpen = true;
+      }
     }
-    function closeModal(){
-      document.getElementById('modal').classList.remove('active');
+
+    function closeModal(skipHistory){
+      const modal = document.getElementById('modal');
+
+      if(modal.classList.contains('active')){
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+      }
+
+      if(!skipHistory && modalHistoryOpen){
+        modalHistoryOpen = false;
+        history.back();
+      }else{
+        modalHistoryOpen = false;
+      }
     }
+
     document.getElementById('modal').addEventListener('click', function(event){
       if(event.target.id === 'modal') closeModal();
+    });
+
+    window.addEventListener('popstate', function(){
+      const modal = document.getElementById('modal');
+      if(modal.classList.contains('active')){
+        modal.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        modalHistoryOpen = false;
+      }
+    });
+
+    document.addEventListener('keydown', function(event){
+      if(event.key === 'Escape') closeModal();
     });
   </script>
 </body>
